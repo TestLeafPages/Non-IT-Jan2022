@@ -1,0 +1,190 @@
+
+OOPs Concept
+============
+Inheritance 
+Polymorphism
+
+====================
+OOPS-Object Oriented Programming Language
+
+What OOPs?-Process to handle object
+
+Object --real time entity
+         --state and behaviour of the object
+Class-template
+Major 4 concepts/pillars/principles of the OOP
+==================================
+1.Inheritance-acquiring the features of parent to the child
+2.Polymorphism-Many forms
+3.Abstraction--model
+4.Encapsulation-data hiding 
+
+=================================
+Inheritance:
+========
+   -acquring the feature of parent
+
+--Acquiring the properties of super class by the subclass
+-Easy Maintenance 
+-Reusabilty 
+
+Parent-superclass
+Child->subClass
+
+Keywords- extends
+
+Types:
+====
+Single Inheritance
+Multi-Level Inheritance
+H‏irerchial Inheritance 
+Multiple Inheritance
+Hybird Inheritance
+
+
+Single Inheritance--- >Parent ->child1                           
+
+Multi-Level Inheritance
+
+GrandFather-->Father-->Son
+
+Hirerchial Inheritance
+
+Parent--- child1
+	-Child 2
+	-child3
+
+
+Multiple Inheritance
+===============
+-------It is not possible in java
+------Because of Diamond Problem
+
+Hybird Inheritance
+=============
+combination of all types of inheritance
+Example in Selenium
+
+Single inheritance
+RemoteWebDriver -Parent Class
+
+ChromeDriver extends RemoteWebDriver
+EdgeDriver extends RemoteWebDriver
+
+Multilevel
+RemoteWebDriver ---->ChromiumDriver--->Chrome/edge driver
+
+==================================================================================================
+PolyMorphism
+===========
+
+----Taking Many forms
+
+
+OverLoading -->CompileTimePolymorphism/Static binding
+Overriding--->runtime polymorphism/Dynamic binding
+
+
+OverLoading
+==========-
+ 
+---In a Same Class with the same Method name and having different arguments
+
+SwitchTo().frame(index)
+frame(String id/name)
+frame(WebElement)
+
+findElement
+
+Java-Print method
+
+===========================================
+Method OverRiding-(is-A)
+=============
+
+Runtime polymorphism/dynamic binding
+
+Same Method,same Arguments but in different classes
+
+
+Works based on inheritance
+it uses keyword--extends
+
+
+Method Overriding:
+===============
+
+Create a class Laptop
+Create a method as getSystemInfo 
+   { 
+print the systemInfo as windows10
+}
+
+Create an another class as PC which extends Laptop
+Create a method as getSystemInfo 
+{
+print the systemInfo as MAC
+}
+
+
+Create main method to execute both the parent and child class methods
+
+
+Examples
+
+selenium: quit()
+java: toString()
+
+Super --Keyword
+  ----to call the parent method which are overridden in your subclass
+
+Classroom:1(Single Inheritance)
+=========
+     Class (without main method)       :Computer  
+     Methods   :computerModel() and print statement
+
+     Class        :Desktop
+     Methods   :desktopSize()    
+
+Description:
+
+create above 2 class and call all your class methods into the Desktop using single inheritance.
+
+
+classroom :2(Multi-level and hirerchial Inheritance)
+==========
+Class: Vehicle
+Methods: applyBrake()
+	soundHorn()
+	engine()
+
+Class: car extends Vehicle
+Methods: automaticGearsystem()
+	alloyWheel()
+
+Class:Bike extends vehicle
+Methods:discBreak()
+	electricBike()
+
+
+Class: Audi extends car
+Method:openSunroof()
+
+Class:BuyVehicle
+Create object for Audi and call all the methods
+Create Object for Bike and call all the methods
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
