@@ -1,0 +1,70 @@
+Abstraction: Collection of ideas rather than actual event
+=========
+Hiding the unwanted details and displaying only the relavant information
+
+Abstract class:
+============
+---Use keyword abstract
+---0-100% of Abstraction 
+---both implemented and unimplemented methods
+--to use the abstract methods in the concrete class--Keyword extends
+---Cannot create object for the abstract class
+
+syntax for creating abstract class and methods
+  public abstract class
+Accesspecifier returntype methodName();
+  public abstract void methodName();
+
+Interface:
+=======
+---Unimpemented methods
+--100% of abstraction
+---Keyword -implements
+----variables declared --static final variable
+---Cannot create object
+---public methods
+
+
+Accesspecifier returntype methodName();
+ public void methodName();
+class -->public interface className()
+
+
+Final variable/method -->like cannot manipulate the variable and it works as a constant
+
+Static variable/method-->It creates single memory...
+no need create an object
+call the static variable direcly by its name or using classname in other classes
+
+Accessing the interfce and abstract class
+================================
+Interface can extend the other interface
+Class extends other Class
+Class can extend the abstract class
+
+Abstract class can implement the interface
+Class can extend abstract class and also implement the interface
+Class can implement multiple interfaces
+
+Not possible
+=========
+Interface cannot extend the class
+
+Constructor
+=========
+Method which are called while creating a object
+Constructor will have the same name as the class name
+constructor will not return anything
+
+Default Constructor
+Parametrized constructor
+
+this keyword-->to avoid the confusion between using the gloabal variables or methods
+-->to call the current class constructor
+calling one constructor from other Constructor using this keyword---Constructor Chaining
+
+
+
+
+
+
