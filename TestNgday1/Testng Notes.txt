@@ -1,0 +1,90 @@
+TestNg FrameWork
+===============
+Framework-Structure..
+
+TestNg--Beust-->Excecution framework
+---Customize our excute our testcase
+--Used in all kind from unit, intergration..
+
+Why Testng?
+--Execute Multiple testcases
+--allows you to execute the testcases either sequential or parallel way
+ - get the status of the testcases/Excecution summary
+--Allows to priorize the execution of the testcases
+--Annotation and attribute to control execution flow
+--Supports data-driven --to handle multiple datas
+--Supports Cross browser testing
+--Listeners to retry the failed testcases
+-- Assertion-Validation and verification can also be handled
+--Provide reports-html report
+
+Things required For TestNg Framework
+
+*Adding Plugin
+*Adding dependency
+
+Classroom:1
+========
+https://github.com/TestLeafPages/SelAug2021/blob/main/testcase.zip
+2. Download testcase.zip
+3. Extract the zip file
+4. copy the testcase folder
+5. paste it under scr/main/java
+
+Steps to convert standalone testcase into TestNG testcase
+----------------------------------------------------------
+1. Remove static keyword from main method
+2. Remove String[] args argument
+3. Rename main() into meaningful method name
+4. Apply @Test on top of the method
+
+testng.xml structure
+<suite name="Suite">-->Top most layer
+  <test thread-count="5" name="Test">
+    <classes>
+       <class name="testcase.CreateLead"/>     
+      <class name="testcase.DeleteLead"/>   
+     
+    </classes>
+  </test> 
+
+Suite-hold multiple tests
+test-Holds multiples classes
+
+Class room
+=========
+Eecute the testcase Sequentially and parallel
+Steps: Select the testcases-->rightclick Testng-->convert to TestNg
+For Parrallel-->select parallel mode-Classes
+
+Execute from Xml file
+
+==========================================
+Annotations-shows the order of Executions
+Beforesuite-Execute once before all your tests
+before test
+BeforeClass
+Before Method
+Testcase Execution Order
+After Method
+AfterClass
+After Test
+
+Classroom
+==========
+Create a common class
+Move all the common steps to common class (remove those steps  in the testcases)
+Use @Before and @After Method annotation to define your precondition and post condition Methods
+Extend the common class to leads classes
+
+Attributes in Testng:
+===============
+1.Priority-->to prioritize the testmethods , least set value will be executed first,default=0
+2.Enabled-->to ignore testmethod and set as false, default-true
+3.invocationCount-->to execute the test method multiple times
+4.threadPoolSize-->set the thread to execute the testmethod which runs parallel-->comes along with invocation count
+5.dependsOnMethods-->possible to control the execution which a method is depends on another testmethod
+			can have multiple dependsonmethod
+			status as skipped for dependent method when the idependent method fails
+
+
