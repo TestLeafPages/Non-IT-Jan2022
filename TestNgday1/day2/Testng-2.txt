@@ -1,0 +1,31 @@
+Today's Agenda
+===========
+Attributes
+Parametrization
+
+Priority
+depensOnMethods
+invocationCount
+threadpoolSize
+enabled
+alwaysRun--To make the dependent method to execute even when the method  fails
+timeouts-give the time limit for the execution of test methods
+groups--Catagories the testcases and execute based on the groups
+dependsongroups--injecting the dependcies based on the group to execute
+
+==================================================================
+Parametrization:-->to handle multiple datas to the testcases
+============
+Static Parametrization
+Dynamic Parametrization
+
+Staticdata
+@Parameters-->in class file
+
+in xml file
+<parameter name="browser" value="chrome"></parameter>
+
+Dynamic data
+==========
+@DataProvider
+
